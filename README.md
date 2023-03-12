@@ -1,5 +1,7 @@
 # Lorenz Attractor in Rust Bevy
 
+![Screenshot](./.github/screenshot.png)
+
 # How to run:
 
 ```bash
