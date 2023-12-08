@@ -77,7 +77,7 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
     }
 
     commands.spawn((TextBundle::from_section(
-        "Click the MB2 button and move the mouse to initiate movement.\nHold down the Ctrl key to enable rotation.",
+        "Click the MB2 button and move the mouse to initiate movement.\nHold down the Ctrl key to enable rotation.\nScroll to zoom in/out.",
         TextStyle {
             font: asset_server.load("fonts/FiraSans-Regular.ttf"),
             font_size: 14.0,
