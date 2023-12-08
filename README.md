@@ -2,6 +2,8 @@
 
 ![Screenshot](./.github/screenshot.png)
 
+Lorenz Attractor implementation in rust bevy.
+
 # How to run:
 
 ```bash

@@ -1,10 +1,22 @@
 [package]
 name = "lorenz-attractor"
-version = "0.1.0"
+version = "0.2.0"
+description = "Simple Lorenz attractor implementation in rust bevy."
+authors = ["Berke Biricik <berkeumtbiricik@gmail.com>"]
+categories = ["Math", "Simulation", "Chaos", "3D"]
+license-file = "LICENSE"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-bevy = "0.10.0"
-bevy_prototype_debug_lines = { version = "0.10.0", features = ["3d"] }
+bevy = "0.12.1"
+bevy_egui = "0.23.0"
+bevy_debug_grid = "0.4.0"
+smooth-bevy-cameras = "0.10.0"
+
+# Enable a small amount of optimization in debug mode
+[profile.dev]
+opt-level = 1
+
+# Enable high optimizations for dependencies (incl. Bevy), but not for our code:
+[profile.dev.package."*"]
+opt-level = 3
